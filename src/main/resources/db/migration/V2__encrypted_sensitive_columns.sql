@@ -1,0 +1,15 @@
+ALTER TABLE users
+    MODIFY username VARCHAR(512) NOT NULL,
+    MODIFY password_hash VARCHAR(512) NOT NULL,
+    MODIFY email VARCHAR(512) NOT NULL;
+
+ALTER TABLE profile
+    MODIFY login VARCHAR(512) NOT NULL,
+    MODIFY parole_hash VARCHAR(512) NOT NULL,
+    MODIFY email VARCHAR(512) NOT NULL;
+
+ALTER TABLE steamguard
+    MODIFY steamid64 VARCHAR(512) NOT NULL,
+    MODIFY shared_secret VARCHAR(512) NOT NULL,
+    MODIFY identity_secret VARCHAR(512) NOT NULL,
+    MODIFY device_id VARCHAR(512) NULL;
